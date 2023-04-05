@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище ModelContainer" CdmEntityContainer="PrintEntities">
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="Model.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Картриджи">
+      <EntityTypeMapping TypeName="Model.Картриджи">
+        <MappingFragment StoreEntitySet="Картриджи">
+          <ScalarProperty Name="id_картриджа" ColumnName="id_картриджа" />
+          <ScalarProperty Name="Название" ColumnName="Название" />
+          <ScalarProperty Name="Тип_картриджа" ColumnName="Тип_картриджа" />
+          <ScalarProperty Name="Статус" ColumnName="Статус" />
+          <ScalarProperty Name="Дата_заправки" ColumnName="Дата_заправки" />
+          <ScalarProperty Name="Количество_заправок" ColumnName="Количество_заправок" />
+          <ScalarProperty Name="id_тонер" ColumnName="id_тонер" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Неисправность">
+      <EntityTypeMapping TypeName="Model.Неисправность">
+        <MappingFragment StoreEntitySet="Неисправность">
+          <ScalarProperty Name="id_неисправность" ColumnName="id_неисправность" />
+          <ScalarProperty Name="Описание" ColumnName="Описание" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ответственные">
+      <EntityTypeMapping TypeName="Model.Ответственные">
+        <MappingFragment StoreEntitySet="Ответственные">
+          <ScalarProperty Name="id_ответственные" ColumnName="id_ответственные" />
+          <ScalarProperty Name="Фамилия" ColumnName="Фамилия" />
+          <ScalarProperty Name="Имя" ColumnName="Имя" />
+          <ScalarProperty Name="Отчество" ColumnName="Отчество" />
+          <ScalarProperty Name="Дожность" ColumnName="Дожность" />
+          <ScalarProperty Name="Телефон" ColumnName="Телефон" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Поставщики">
+      <EntityTypeMapping TypeName="Model.Поставщики">
+        <MappingFragment StoreEntitySet="Поставщики">
+          <ScalarProperty Name="id_поставщика" ColumnName="id_поставщика" />
+          <ScalarProperty Name="Название_организации" ColumnName="Название_организации" />
+          <ScalarProperty Name="ФИО_поставщика" ColumnName="ФИО_поставщика" />
+          <ScalarProperty Name="Телефон" ColumnName="Телефон" />
+          <ScalarProperty Name="Адрес" ColumnName="Адрес" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Принтеры">
+      <EntityTypeMapping TypeName="Model.Принтеры">
+        <MappingFragment StoreEntitySet="Принтеры">
+          <ScalarProperty Name="id_принтера" ColumnName="id_принтера" />
+          <ScalarProperty Name="Инвентарный_номер" ColumnName="Инвентарный_номер" />
+          <ScalarProperty Name="Модель_принтера" ColumnName="Модель_принтера" />
+          <ScalarProperty Name="Тип_принтера" ColumnName="Тип_принтера" />
+          <ScalarProperty Name="id_поставщика" ColumnName="id_поставщика" />
+          <ScalarProperty Name="Гарантия" ColumnName="Гарантия" />
+          <ScalarProperty Name="Дата_покупки" ColumnName="Дата_покупки" />
+          <ScalarProperty Name="Дата_списания" ColumnName="Дата_списания" />
+          <ScalarProperty Name="id_картриджи" ColumnName="id_картриджи" />
+          <ScalarProperty Name="Статус" ColumnName="Статус" />
+          <ScalarProperty Name="id_ответственные" ColumnName="id_ответственные" />
+          <ScalarProperty Name="Кабинет" ColumnName="Кабинет" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ремонт">
+      <EntityTypeMapping TypeName="Model.Ремонт">
+        <MappingFragment StoreEntitySet="Ремонт">
+          <ScalarProperty Name="id_ремонт" ColumnName="id_ремонт" />
+          <ScalarProperty Name="Дата_ремонта" ColumnName="Дата_ремонта" />
+          <ScalarProperty Name="Описание_ремонта" ColumnName="Описание_ремонта" />
+          <ScalarProperty Name="id_неисправность" ColumnName="id_неисправность" />
+          <ScalarProperty Name="Цена_ремонта" ColumnName="Цена_ремонта" />
+          <ScalarProperty Name="id_принтера" ColumnName="id_принтера" />
+          <ScalarProperty Name="Модели_принтера" ColumnName="Модели_принтера" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Тонер">
+      <EntityTypeMapping TypeName="Model.Тонер">
+        <MappingFragment StoreEntitySet="Тонер">
+          <ScalarProperty Name="id_тонер" ColumnName="id_тонер" />
+          <ScalarProperty Name="Макрка" ColumnName="Макрка" />
+          <ScalarProperty Name="Тип_тонера" ColumnName="Тип_тонера" />
+          <ScalarProperty Name="Количество" ColumnName="Количество" />
+          <ScalarProperty Name="Дата_списания" ColumnName="Дата_списания" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
